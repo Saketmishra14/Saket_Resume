@@ -1,0 +1,117 @@
+:root {
+  --bg: #fefefe;
+  --card: #ffffff;
+  --text: #1e1e1e;
+  --accent: #0077ff;
+  --secondary: #666;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.container {
+  max-width: 880px;
+  margin: 20px auto;
+  padding: 24px;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.header h3 {
+  color: var(--accent);
+  margin: 6px 0;
+}
+
+.contact p {
+  margin: 3px 0;
+  font-size: 0.95rem;
+  color: var(--secondary);
+}
+
+.profile-img img {
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+}
+
+.section {
+  margin-top: 24px;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.section p,
+.section li {
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.skills-grid {
+  display: flex;
+  gap: 40px;
+}
+
+.projects-list li {
+  margin-bottom: 10px;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.light {
+  color: var(--secondary);
+  font-size: 0.95rem;
+}
+
+.inline-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.cert-link .light {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.cert-link .light:hover {
+  color: #0077ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
