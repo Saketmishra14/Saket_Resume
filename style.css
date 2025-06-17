@@ -115,3 +115,23 @@ a {
   text-decoration: underline;
   cursor: pointer;
 }
+
+
+/*  */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.skills-grid ul {
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
