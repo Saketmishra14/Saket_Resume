@@ -142,17 +142,17 @@ a {
 /* DOT using ::before */
 .education-left::before
  {
-  content: "•";
   position: absolute;
+    content: "• ";
+  color: #000; /* black color */
   top: 18px;
   left: 12px;
   font-size: 1.3rem;
-  color: var(--accent);
   font-weight: bold;
 }
 .education-right p strong::before {
-  content: "• ";
-  color: var(--accent);
+    content: "• ";
+  color: #000; /* black color */
   font-weight: bold;
   margin-right: 6px;
 }
