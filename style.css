@@ -139,24 +139,24 @@ a {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* DOT using ::before */
-.education-left::before
- {
+/* Black DOT before education-left block */
+.education-left::before {
+  content: "•";
   position: absolute;
-    content: "• ";
-  color: #000; /* black color */
   top: 18px;
   left: 12px;
   font-size: 1.3rem;
   font-weight: bold;
+  color: #000; /* black */
 }
+
+/* Black DOT before "10th – CBSE Board" only */
 .education-right p strong::before {
-    content: "• ";
-  color: #000; /* black color */
+  content: "• ";
+  color: #000; /* black */
   font-weight: bold;
   margin-right: 6px;
 }
-
 
 /* Hover effect */
 .education-left:hover,
@@ -185,6 +185,7 @@ a {
     padding: 14px 16px 14px 34px;
   }
 }
+
 
 
 /*  */
